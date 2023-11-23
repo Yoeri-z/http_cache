@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 
-import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
-import 'package:http_cache/src/response_converter.dart' as converter;
+import 'package:http_cache_flutter/src/response_converter.dart' as converter;
 
 class HttpCache {
   late final Box<Uint8List> responseBox;
@@ -67,7 +67,7 @@ class HttpCache {
 
   ///Call this function to initialize the cache, you must await this function before using any other HttpCache function
   static Future<void> init() async {
-    Hive.init('./http_cache/');
+    Hive.initFlutter('./http_cache/');
     _instance.responseBox = await Hive.openBox('http_store');
     _instance.metaDataBox = await Hive.openBox('http_meta');
     _instance.initialized = true;

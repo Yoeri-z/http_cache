@@ -1,6 +1,6 @@
 # A convienience package for caching http requests
 
-http_cache is a small package that makes it a little bit easier to cache http requests. To use it you also need the http package.
+http_cache_flutter is a small package that makes it a little bit easier to cache http requests. To use it you also need the http package.
 
 Using it is very easy:
 
@@ -32,3 +32,4 @@ void main(List<String> args) async {
 
 The package uses the [hive](https://pub.dev/packages/hive) package to store and retrieve data. 
 
+This is the package that is modified for flutter. For the dart package see [http_cache](https://pub.dev/packages/http_cache)~
