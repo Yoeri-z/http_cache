@@ -30,5 +30,5 @@ void main(List<String> args) async {
 }
 ```
 
-Both the body data and the meta data like headers and reasonStrings will be stored.
+The package uses the [hive](https://pub.dev/packages/hive) package to store and retrieve data. 
 
